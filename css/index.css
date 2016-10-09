@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bg {
+  width: 100%;
+  background-image: url(../image/bg.jpg);
+  background-size: 100% 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.bg .button {
+  width: 240px;
+  height: 130px;
+  position: absolute;
+  top: 80px;
+  left: 150px;
+}
+
+.bg .button li {
+  width: 100%;
+  height: 57px;
+  margin-bottom: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 4px 0;
+  cursor: pointer;
+  transform: scale(0, 0);
+  transition: transform .4s ease;
+}
+
+.bg .button li.active {
+  transform: scale(1, 1);
+}
+
+.bg .button .list-play {
+  background-image: url(../image/play.png);
+}
+
+.bg .button .list-replay {
+  background-image: url(../image/replay-btn.png);
+}
+
+.bg .container {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bg .container .open {
+  width: 200px;
+  height: 260px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+  display: none;
+}
+
+.bg .container .begin {
+  background-image: url(../image/one.png);
+}
+
+.bg .container .play-img {
+  background-image: url(../image/two.png);
+  background-position: 0 6px;
+}
+
+.bg .container .underdog {
+  background-image: url(../image/underdog.png);
+}
+
+.bg .container .btn {
+  width: 245px;
+  height: 55px;
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-position: 10px 0;
+  cursor: pointer;
+  display: none;
+}
+
+.bg .container .begin-btn {
+  background-image: url(../image/begin-btn.png);
+}
+
+.bg .container .play-btn {
+  background-image: url(../image/play-btn.png);
+}
+
+.bg .container .replay-btn {
+  background-image: url(../image/replay.png);
+}
+
+.bg .box {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(#4DFFCD, #b6ffec);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: scale(0, 0);
+  transition: transform .4s ease;
+}
+
+.bg .box.active {
+  transform: scale(1, 1);
+}
+
+.bg .block {
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+
+.bg .she {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.bg .food {
+  width: 25px;
+  height: 25px;
+  background-color: #bfff00;
+  border-radius: 50%;
+  transition: opacity .8s ease,transform .8s ease;
+}
+
+.bg .food.food-active {
+  opacity: 0.8;
+  transform: scale(1.2, 1.2);
+}
